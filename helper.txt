@@ -1,0 +1,354 @@
+user@zhokee-inspiron:~/DJANGO/blog_repeat$ python3 -m venv venv
+user@zhokee-inspiron:~/DJANGO/blog_repeat$ source venv/bin/activate
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ pip install -r req.txt
+Collecting django-admin
+  Downloading django_admin-2.0.2-py2.py3-none-any.whl (7.6 kB)
+Collecting djangorestframework
+  Using cached djangorestframework-3.14.0-py3-none-any.whl (1.1 MB)
+Collecting psycopg2-binary
+  Using cached psycopg2_binary-2.9.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+ERROR: Could not find a version that satisfies the requirement python-decuople (from versions: none)
+ERROR: No matching distribution found for python-decuople
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ pip install -r req.txt
+ERROR: Could not find a version that satisfies the requirement djang (from versions: none)
+ERROR: No matching distribution found for djang
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ pip install -r req.txt
+Collecting django
+  Using cached Django-4.1.6-py3-none-any.whl (8.1 MB)
+Collecting djangorestframework
+  Using cached djangorestframework-3.14.0-py3-none-any.whl (1.1 MB)
+Collecting psycopg2-binary
+  Using cached psycopg2_binary-2.9.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+Collecting python-decouple
+  Using cached python_decouple-3.7-py3-none-any.whl (9.9 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.6.0-py3-none-any.whl (23 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Collecting pytz
+  Using cached pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+Installing collected packages: pytz, python-decouple, sqlparse, psycopg2-binary, asgiref, django, djangorestframework
+Successfully installed asgiref-3.6.0 django-4.1.6 djangorestframework-3.14.0 psycopg2-binary-2.9.5 python-decouple-3.7 pytz-2022.7.1 sqlparse-0.4.3
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git init
+подсказка: Using 'master' as the name for the initial branch. This default branch name
+подсказка: is subject to change. To configure the initial branch name to use in all
+подсказка: of your new repositories, which will suppress this warning, call:
+подсказка: 
+подсказка:      git config --global init.defaultBranch <name>
+подсказка: 
+подсказка: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+подсказка: 'development'. The just-created branch can be renamed via this command:
+подсказка: 
+подсказка:      git branch -m <name>
+Инициализирован пустой репозиторий Git в /home/user/DJANGO/blog_repeat/.git/
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git remote add origin git@github.com:szhokee/rep_blogpy25.git
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git commit -m '
+rep_blog25'
+На ветке master
+
+Начальный коммит
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+        .env_example
+        .gitignore
+        req.txt
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git push origin master
+error: src refspec master does not match any
+error: не удалось отправить некоторые ссылки в «github.com:szhokee/rep_blogpy25.git»
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git push origin main
+error: src refspec main does not match any
+error: не удалось отправить некоторые ссылки в «github.com:szhokee/rep_blogpy25.git»
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git add .
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git commit -m .[master (корневой коммит) 75165d1] .
+ 3 files changed, 267 insertions(+)
+ create mode 100644 .env_example
+ create mode 100644 .gitignore
+ create mode 100644 req.txt
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git push origin master
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (4/4), готово.
+Запись объектов: 100% (5/5), 2.11 КиБ | 2.11 МиБ/с, готово.
+Всего 5 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:szhokee/rep_blogpy25.git
+ * [new branch]      master -> master
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ django-admin startproject main .
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ mkdir applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ cd applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ django-admin startapp account
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ mkdir applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applica
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applica
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applicat
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applicati
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ cd ..
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd django
+bash: cd: django: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd Desktopbash: cd: Desktop: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd Desktop/
+bash: cd: Desktop/: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd /Desktop/
+bash: cd: /Desktop/: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd /Desktop
+bash: cd: /Desktop: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd /DJANGO
+bash: cd: /DJANGO: Нет такого файла или каталога
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ 
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ ls
+applications  ataka  ataka.2  book_api  broken  dell  erwin  manage.py
+(venv) user@zhokee-inspiron:~/.local/share/Trash/files$ cd ..
+(venv) user@zhokee-inspiron:~/.local/share/Trash$ ls
+expunged  files  info
+(venv) user@zhokee-inspiron:~/.local/share/Trash$ cd ..
+(venv) user@zhokee-inspiron:~/.local/share$ cd ..
+(venv) user@zhokee-inspiron:~/.local$ cd
+(venv) user@zhokee-inspiron:~$ ls
+ bot_lesson   FL          haka       lessPractic  "PlayOnLinux's virtual drives"   prerm      venv     week3   week7   Видео         Музыка
+ conffiles    folders     hakaton    md5sums       postinst                        snap       week1    week4   week8   Документы     Общедоступные
+ control      game        html       parsing       postrm                          test_git   week10   week5   week9   Загрузки     'Рабочий стол'
+ DJANGO       hackathon   komorebi   pgadmin4      preinst                         triggers   week2    week6   wine    Изображения   Шаблоны
+(venv) user@zhokee-inspiron:~$ cd DJANGO/
+(venv) user@zhokee-inspiron:~/DJANGO$ ls
+blog  blog_repeat  books  dell  first_project  first_project_2  help.txt  Kira  Lessons  music_blog  Olaf  Pepsi  scattered  second_project
+(venv) user@zhokee-inspiron:~/DJANGO$ cd blog_repeat/
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ls
+main  manage.py  req.txt  venv
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ code .
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ mkdir applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ cd applications
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ django-admin startapp account
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ ../manage.py startapp post
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat/applications$ cd ..
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git add .
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git commit -m 'create_new_25'
+[master 7080df1] create_new_25
+ 20 files changed, 234 insertions(+)
+ create mode 100644 applications/account/__init__.py
+ create mode 100644 applications/account/admin.py
+ create mode 100644 applications/account/apps.py
+ create mode 100644 applications/account/migrations/__init__.py
+ create mode 100644 applications/account/models.py
+ create mode 100644 applications/account/tests.py
+ create mode 100644 applications/account/views.py
+ create mode 100644 applications/post/__init__.py
+ create mode 100644 applications/post/admin.py
+ create mode 100644 applications/post/apps.py
+ create mode 100644 applications/post/migrations/__init__.py
+ create mode 100644 applications/post/models.py
+ create mode 100644 applications/post/tests.py
+ create mode 100644 applications/post/views.py
+ create mode 100644 main/__init__.py
+ create mode 100644 main/asgi.py
+ create mode 100644 main/settings.py
+ create mode 100644 main/urls.py
+ create mode 100644 main/wsgi.py
+ create mode 100755 manage.py
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ git push origin master
+Перечисление объектов: 19, готово.
+Подсчет объектов: 100% (19/19), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (17/17), готово.
+Запись объектов: 100% (18/18), 3.63 КиБ | 930.00 КиБ/с, готово.
+Всего 18 (изменений 3), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (3/3), done.
+To github.com:szhokee/rep_blogpy25.git
+   75165d1..7080df1  master -> master
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py makemigrations
+No changes detected
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py make
+migrate
+Unknown command: 'makemigrate'. Did you mean makemigrations?
+Type 'manage.py help' for usage.
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py createsuperuser
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/apps/config.py", line 210, in create
+    app_module = import_module(app_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'account'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 22, in <module>
+    main()
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 420, in execute
+    django.setup()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/apps/config.py", line 212, in create
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Cannot import 'account'. Check that 'applications.account.apps.AccountConfig.name' is correct.
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py createsuperuser
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 187, in check_key
+    return self.graph.root_nodes(key[0])[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 22, in <module>
+    main()
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 440, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 402, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/contrib/auth/management/commands/createsuperuser.py", line 88, in execute
+    return super().execute(*args, **options)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 447, in execute
+    self.check_migrations()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 564, in check_migrations
+    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 58, in __init__
+    self.build_graph()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 250, in build_graph
+    self.add_external_dependencies(key, migration)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 214, in add_external_dependencies
+    parent = self.check_key(parent, key[0])
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 194, in check_key
+    raise ValueError(
+ValueError: Dependency on app with no migrations: account
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py makemigrate
+Unknown command: 'makemigrate'. Did you mean makemigrations?
+Type 'manage.py help' for usage.
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py migrate
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 187, in check_key
+    return self.graph.root_nodes(key[0])[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 22, in <module>
+    main()
+  File "/home/user/DJANGO/blog_repeat/./manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 440, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 402, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 448, in execute
+    output = self.handle(*args, **options)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/base.py", line 96, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/core/management/commands/migrate.py", line 114, in handle
+    executor = MigrationExecutor(connection, self.migration_progress_callback)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/executor.py", line 18, in __init__
+    self.loader = MigrationLoader(self.connection)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 58, in __init__
+    self.build_graph()
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 250, in build_graph
+    self.add_external_dependencies(key, migration)
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 214, in add_external_dependencies
+    parent = self.check_key(parent, key[0])
+  File "/home/user/DJANGO/blog_repeat/venv/lib/python3.10/site-packages/django/db/migrations/loader.py", line 194, in check_key
+    raise ValueError(
+ValueError: Dependency on app with no migrations: account
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py makemigrate
+Unknown command: 'makemigrate'. Did you mean makemigrations?
+Type 'manage.py help' for usage.
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py makemigrations
+Migrations for 'account':
+  applications/account/migrations/0001_initial.py
+    - Create model CustomUser
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py migrate
+Operations to perform:
+  Apply all migrations: account, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0001_initial... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying account.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sessions.0001_initial... OK
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py createsuperuser
+Email: qatar@qatar.com
+Password: 
+Password (again): 
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+(venv) user@zhokee-inspiron:~/DJANGO/blog_repeat$ ./manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 06, 2023 - 11:24:00
+Django version 4.1.6, using settings 'main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /
+[06/Feb/2023 11:24:14] "GET / HTTP/1.1" 404 2165
+Not Found: /favicon.ico
+[06/Feb/2023 11:24:14] "GET /favicon.ico HTTP/1.1" 404 2216
+[06/Feb/2023 11:24:50] "GET /admin/ HTTP/1.1" 302 0
+[06/Feb/2023 11:24:50] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[06/Feb/2023 11:24:50] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[06/Feb/2023 11:24:50] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[06/Feb/2023 11:24:50] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[06/Feb/2023 11:24:50] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[06/Feb/2023 11:24:50] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[06/Feb/2023 11:24:50] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[06/Feb/2023 11:24:59] "GET /account/register HTTP/1.1" 301 0

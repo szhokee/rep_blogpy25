@@ -50,7 +50,7 @@ class CustomUser(AbstractUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
-    def __str__(self) :
+    def __str__(self):
         return self.email 
 
     def create_activation_code(self):
